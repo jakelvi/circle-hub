@@ -2,6 +2,8 @@ Circle-Hub 🌐 Social media application: Spreading Joy through Shared Moments W
 
 Getting Started:
 To kickstart the server side, connect your server to MongoDB by updating the MongoDB URL in config > .dev.env. Then, navigate to the server directory using the command pallet (cd server) and start the server with pnpm watch. On the client side, move to the client directory (cd client), run npm start, and follow the link in the terminal to access the client app. 🖥️🔗
+
+
 Setup Requirements:
 Users need to configure their environment by adding their JWT secret code in the .env file. Additionally, include the MongoDB connection string in config > dev.env to enable smooth server operation and efficient data management. ⚙️🔑
 
