@@ -13,14 +13,12 @@ import {
   getUserPosts,
   handleFileUpload,
   handleUploadPostImage,
-  logMiddleware,
   postCreation,
   searchPosts,
   toggleFavorite,
   toggleLike,
   updatePost,
 } from "../controllers/postControllers";
-import { isAdminOrUser } from "../middleware/is-admin-or-user";
 
 const router = Router();
 
@@ -41,7 +39,7 @@ router.put("/updatePost", validateToken, updatePost);
 
 router.get("/searchPosts", validateToken, searchPosts);
 
-router.get("/getFavorites/:id", logMiddleware, validateToken, getAllFavorites);
+router.get("/getFavorites/:id", validateToken, getAllFavorites);
 
 router.get(
   "/getHighestLiked/:id",
